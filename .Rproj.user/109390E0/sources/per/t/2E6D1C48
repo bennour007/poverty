@@ -1,0 +1,25 @@
+{
+    "id": "2E6D1C48",
+    "path": "~/projects/poverty/cleaning_script.R",
+    "project_path": "cleaning_script.R",
+    "type": "r_source",
+    "hash": "347339550",
+    "contents": "",
+    "dirty": false,
+    "created": 1605313399057.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "426,0",
+        "scrollLine": "400"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1605316445,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605316445613,
+    "read_only": false,
+    "read_only_alternatives": []
+}
