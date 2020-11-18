@@ -446,6 +446,9 @@ tidy_tables <- map2(states_tables, nstates,
 )
 
 # saving everything to a clean data folder 
+
+# It would e a good idea if I name each table with the name of its state. not now.
+
 tmp <- vector(length = 26)
 for(i in 1:26){
   tmp[[i]] <- paste("t",i, sep="")
