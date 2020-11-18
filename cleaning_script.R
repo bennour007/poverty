@@ -415,9 +415,10 @@ tables_new <- map(list_tables,
                   )
 
 #for now i will only convert the dat to double for the state wise tables
+
 states_tables <- vector("list", 24)
 
-states_tables <- map(tables_new[c(1:24)], 
+tables_new[c(1:24)] <- map(tables_new[c(1:24)], 
                   function(x){
                     x %>%
                       sapply(., str_replace, ",", ".") %>%
@@ -428,6 +429,16 @@ states_tables <- map(tables_new[c(1:24)],
                       mutate(poverty = as.double(poverty))
                     }
                   )
+
+tables_new[[25]][,c(2:ncol(tables_new[[25]]))] <- 
+  tables_new[[25]][,c(2:ncol(tables_new[[25]]))] %>% 
+  sapply(., as.double) 
+
+tables_new[[26]][,c(2:ncol(tables_new[[26]]))] <- 
+  tables_new[[26]][,c(2:ncol(tables_new[[26]]))] %>% 
+  sapply(., as.double) 
+
+states_tables <- tables_new[c(1:24)]
 
 
 n_counties <- states_tables %>%
@@ -445,23 +456,24 @@ tidy_tables <- map2(states_tables, nstates,
                     }
 )
 
+tables_new[c(1:24)] <- tidy_tables
+
+tidy_all <- tables_new
+
 # saving everything to a clean data folder 
 
 # It would e a good idea if I name each table with the name of its state. not now.
 
-tmp <- vector(length = 26)
-for(i in 1:26){
-  tmp[[i]] <- paste("t",i, sep="")
-}
+lesnoms <- states %>% append(c("county_details", "state_details"))
 
-paths <- vector(length = 26)
+paths <- map(lesnoms, 
+             function(x){
+               paste("data_clean/",x,".csv", sep = "")
+               }
+             )
 
-for(i in 1:26){
-  paths[[i]] <- paste("data_clean/t",i,".csv", sep = "")
-}
+map2(tidy_all, paths, write_csv)
 
-for(i in 1:26){
-  write_csv(x = tables_new[[i]], paths[[i]])
-}
+# to import in a vecotrized way you can use the this RDS for the names vector: 
 
-# Yeah I hate loops too, but in my case its easier. 
+lesnoms %>% saveRDS("names_of_files", compress = F)
