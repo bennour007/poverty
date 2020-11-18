@@ -404,8 +404,46 @@ list_tables[[25]] <- rbind(as.data.frame(t25[1]),
          poverty = X4, 
          sd = X5) %>%
   as_tibble()
+################################################################################
+
+tables_new <- map(list_tables, 
+                  function(x){
+                    x %>%
+                      sapply(., str_replace, ",", ".") %>%
+                      as_tibble()
+                    }
+                  )
+
+#for now i will only convert the dat to double for the state wise tables
+states_tables <- vector("list", 24)
+
+states_tables <- map(tables_new[c(1:24)], 
+                  function(x){
+                    x %>%
+                      sapply(., str_replace, ",", ".") %>%
+                      as_tibble() %>%
+                      mutate(dropout_rate_primary  = as.double(dropout_rate_primary)) %>%
+                      mutate(dropout_rate_secondary = as.double(dropout_rate_secondary)) %>%
+                      mutate(dropout_rate_ps = as.double(dropout_rate_ps)) %>%
+                      mutate(poverty = as.double(poverty))
+                    }
+                  )
 
 
+n_counties <- states_tables %>%
+  sapply(., nrow) 
+
+
+states <- c("Tunis","Ariana","Ben Arous","Manouba","Nabeul","Zagouan","Bizerte","Beja","Jandouba", "Kef","Seliana","Sousse","Monastir","Mahdia","Sfax","Kairouan","Kasserine","Sidi Bouzid","Gabes","Médnine","Tataouine","Gafsa","Tozeur","Kebili")
+
+nstates <- map2(states, n_counties, rep)
+
+tidy_tables <- map2(states_tables, nstates, 
+                    function(x,y){
+                      x %>%
+                        mutate(state = y)
+                    }
+)
 
 # saving everything to a clean data folder 
 tmp <- vector(length = 26)
@@ -420,7 +458,7 @@ for(i in 1:26){
 }
 
 for(i in 1:26){
-  write_csv(x = list_tables[[i]], paths[[i]])
+  write_csv(x = tables_new[[i]], paths[[i]])
 }
 
 # Yeah I hate loops too, but in my case its easier. 

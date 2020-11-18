@@ -1,13 +1,13 @@
 county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty
-MORNAG,"0,2","7,0","3,1","11,2"
-FOUCHANA,"0,1","5,6","2,4","7,3"
-MHAMDIA,"0,2","10,6","4,6","7,1"
-HAMMAMLIF,"0,2","7,1","4,0","6,4"
-NOUVELLE MEDINA,"0,1","5,1","2,3","5,2"
-BEN AROUS,"0,1","4,8","2,3","5,0"
-HAMMAM ECHATT,"0,2","7,5","3,7","5,0"
-RADES,"0,3","7,7","4,1","4,3"
-BOUMHEL BASSATINE,"0,1","4,2","1,8","4,1"
-MEGRINE,"0,1","4,3","2,5","3,6"
-EL MOUROUJ,"0,0","5,4","2,9","3,2"
-EZZAHRA,"0,1","8,0","4,3","2,6"
+MORNAG,0.2,7,3.1,11.2
+FOUCHANA,0.1,5.6,2.4,7.3
+MHAMDIA,0.2,10.6,4.6,7.1
+HAMMAMLIF,0.2,7.1,4,6.4
+NOUVELLE MEDINA,0.1,5.1,2.3,5.2
+BEN AROUS,0.1,4.8,2.3,5
+HAMMAM ECHATT,0.2,7.5,3.7,5
+RADES,0.3,7.7,4.1,4.3
+BOUMHEL BASSATINE,0.1,4.2,1.8,4.1
+MEGRINE,0.1,4.3,2.5,3.6
+EL MOUROUJ,0,5.4,2.9,3.2
+EZZAHRA,0.1,8,4.3,2.6

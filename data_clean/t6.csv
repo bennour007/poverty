@@ -1,7 +1,7 @@
 county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty
-ENNADHOUR,"0,5","7,4","3,5","22,5"
-SAOUAF,"0,2","9,0","3,4","19,5"
-BIR MCHARGA,"0,2","9,4","3,6","15,8"
-ZRIBA,"0,3","5,2","2,2","13,0"
-EL FAHS,"0,2","5,4","2,5","12,5"
-ZAGHOUAN,"0,3","7,4","3,7","7,2"
+ENNADHOUR,0.5,7.4,3.5,22.5
+SAOUAF,0.2,9,3.4,19.5
+BIR MCHARGA,0.2,9.4,3.6,15.8
+ZRIBA,0.3,5.2,2.2,13
+EL FAHS,0.2,5.4,2.5,12.5
+ZAGHOUAN,0.3,7.4,3.7,7.2
