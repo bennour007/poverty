@@ -429,10 +429,16 @@ tables_new[c(1:24)] <- map(tables_new[c(1:24)],
                       mutate(poverty = as.double(poverty))
                     }
                   )
+# PLEASE BE CAREFUL, THE PAGE NUMBER 93 WAS MADE INTO A ROW
+# IT ALMOST GAVE ME DEPRESSION. ILL MAKE SURE IT WON'T STAY THERE
 
 tables_new[[25]][,c(2:ncol(tables_new[[25]]))] <- 
   tables_new[[25]][,c(2:ncol(tables_new[[25]]))] %>% 
-  sapply(., as.double) 
+  sapply(., as.double)
+
+tables_new[[25]] <- tables_new[[25]] %>% 
+  na.omit()
+
 
 tables_new[[26]][,c(2:ncol(tables_new[[26]]))] <- 
   tables_new[[26]][,c(2:ncol(tables_new[[26]]))] %>% 
@@ -476,4 +482,5 @@ map2(tidy_all, paths, write_csv)
 
 # to import in a vecotrized way you can use the this RDS for the names vector: 
 
-lesnoms %>% saveRDS("names_of_files", compress = F)
+lesnoms %>% write_rds("data_clean/names_of_files.rds")
+

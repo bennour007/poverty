@@ -1,0 +1,10 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+AMDOUN,0.5,7.3,3.4,37.6,Beja
+NEFZA,0.5,7.5,3.8,37.5,Beja
+GOUBELLATE,0.6,11.1,5,36.9,Beja
+TEBOURSOUK,0.1,7.6,3.5,27.3,Beja
+THIBAR,0.4,7,3.1,25.8,Beja
+TESTOUR,0.3,6.4,2.9,25.5,Beja
+BEJA NORD,0.1,6.5,2.4,23,Beja
+BEJA SUD,0.1,7,4.5,18.5,Beja
+MEJEZ EL BAB,0.5,5.5,2.6,17.1,Beja

@@ -1,0 +1,15 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+SEJNANE,0.4,8.5,3.9,39.9,Bizerte
+JOUMINE,0.3,10.9,4.8,36.6,Bizerte
+GHAZALA,0.2,7.7,3.2,34,Bizerte
+MATEUR,0.1,5.2,2.6,19.3,Bizerte
+UTIQUE,0.2,7.3,2.7,19.1,Bizerte
+BIZERTE SUD,0.3,4.4,1.7,15.9,Bizerte
+EL ALIA,0.5,7.7,3.4,15.1,Bizerte
+GHAR EL MELH,0.7,8.6,3.6,14.5,Bizerte
+MENZEL BOURGUIBA,0.3,7.4,3.9,12.8,Bizerte
+RAS JEBEL,0.2,7.1,3.4,12.2,Bizerte
+TINJA,0.1,4.3,2.1,11.3,Bizerte
+ZARZOUNA,0.2,3.8,1.3,10.9,Bizerte
+MENZEL JEMIL,0.2,7.4,3.8,10.6,Bizerte
+BIZERTE NORD,0.2,6.5,3.7,5.3,Bizerte

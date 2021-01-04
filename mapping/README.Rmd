@@ -1,0 +1,29 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## README
+
+The files in this folder are quite well organised. At first, this folder was supposed to hold the files for a web app that shows maps like in the INS report. Then due to ignorance on how to do that efficienctly from my part, I decided to do something different. 
+
+In any case here's what does each file do, you don't need to explore as you might think.
+
+* data_prep.R : prepares the data imports with readr, and purrr. (useless in this new case).
+
+* geojson.R : Imports the spatial data as geojson for the states and the counties. (useless in our new case).
+
+* rename_this.R : Was supposed to host the plots using the geojson.R file. (useless in our new case).
+
+* poverty_table_prep : Prepares the data tables for our new case in an organized manner.
+
+* App.R : Shiny app main file, uses poverty_table_prep.R
+
+
+PS: 
+
+*I will be updating this folder, and this file accordingly each time I make a change. Moreover, Only the clean version is going to stay, the non useful code will be deleted or moved to another folder in the same directory, still not sure yet.* 

@@ -1,0 +1,22 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+SEJOUMI,1.1,4.1,2.7,11.5,Tunis
+JEBEL JLOUD,0.4,8,3.9,9.5,Tunis
+SIDI HASSINE,0.3,8.4,3.6,9.4,Tunis
+LA MEDINA,0.1,6.7,4.8,6.6,Tunis
+EL OMRANE,0.3,6.7,3.3,6.3,Tunis
+EL HARAIRIA,0.3,6.6,3,6.1,Tunis
+KABBARIA,0.2,5.2,2.4,5.3,Tunis
+BAB SOUIKA,0.2,12.1,6.2,4.5,Tunis
+SIDI EL BECHIR,0.1,8.4,4.3,4.2,Tunis
+EZZOUHOUR,0.1,9.3,3.5,4,Tunis
+EL OUERDIA,0.1,6.8,3.4,3.9,Tunis
+EL OMRANE SUPERIEUR,0.1,6.5,3.2,3.5,Tunis
+EL KRAM,0.1,3.8,1.7,3,Tunis
+EL MARSA,0.2,6.7,3.4,2.2,Tunis
+ETTAHRIR,0,7.4,3.7,2,Tunis
+BARDO,0.1,5.3,3.2,1.8,Tunis
+BAB BHAR,0.1,4.5,2.8,1.6,Tunis
+CARTHAGE,0,6.5,3.6,1.6,Tunis
+CITE EL KHADRA,0.1,4.1,1.7,1.4,Tunis
+LA GOULETTE,0.1,7.1,4.4,1.1,Tunis
+EL MENZAH,0,1.7,1.1,0.2,Tunis

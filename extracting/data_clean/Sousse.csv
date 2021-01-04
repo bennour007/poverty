@@ -1,0 +1,17 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+KONDAR,0.8,20.7,4.9,28.7,Sousse
+SIDI EL HENI,1.1,13,4.2,27.9,Sousse
+ENFIDA,0.3,8.3,4,23.8,Sousse
+BOUFICHA,0.3,10.2,3.9,21.9,Sousse
+SIDI ABDELHAMID,0.2,9.2,0.5,17.7,Sousse
+ZAOUIA KSIBA THRAYET,0.5,5.8,2.3,17.3,Sousse
+SIDI BOU ALI,0.6,6.1,4.1,16.5,Sousse
+HERGLA,0.7,3.8,4.6,16.3,Sousse
+KALAA KEBIRA,0.5,6,3.9,16.2,Sousse
+KALAA SGHIRA,0.4,5.9,4.4,15.1,Sousse
+MSAKEN,0.4,6.8,3.1,14.1,Sousse
+SOUSSE RIADH,0.2,5.9,2.8,10.7,Sousse
+AKOUDA,0.3,4.9,3.4,9.3,Sousse
+HAMMEM SOUSSE,0.1,4.1,1.8,8.5,Sousse
+SOUSSE JAWHARA,0.2,6.6,1.7,7,Sousse
+SOUSSE EL MEDINA,0.2,7.2,3.7,5.5,Sousse

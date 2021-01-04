@@ -1,0 +1,12 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+NEBEUR,0.7,9.6,3.4,45.4,Kef
+SAKIET SIDI YOUSSEF,0.4,8.2,5.3,39.7,Kef
+DAHMANI,1,7.7,3,38.4,Kef
+TAJEROUINE,0.4,8.6,1.4,37.7,Kef
+EL KSOUR,0.5,6.7,5.5,37.1,Kef
+KALAÂ KHASBA,0.4,5.4,6,35.3,Kef
+LE SERS,0.4,9.4,5.7,34.4,Kef
+KALAAT SENAN,0.1,9.2,1.7,32.8,Kef
+JERISSA,0.3,4.3,5.7,31.9,Kef
+EL KEF EST,0.2,6.2,3.1,24.6,Kef
+EL KEF OUEST,0.2,8.5,4.4,21.9,Kef

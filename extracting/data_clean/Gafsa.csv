@@ -1,0 +1,12 @@
+county,dropout_rate_primary,dropout_rate_secondary,dropout_rate_ps,poverty,state
+BELKHIR,0.4,7.8,6.2,31.2,Gafsa
+SENED,0.4,9.3,3.6,27.2,Gafsa
+GAFSA NORD,0.3,6.3,5,23,Gafsa
+REDEYEF,0.2,6.8,3.7,21.1,Gafsa
+OUM LAARAYES,0.2,7.8,2.8,20.5,Gafsa
+GUETAR,0.2,8.5,3,19.8,Gafsa
+MDHILA,0.1,10,5.3,18.7,Gafsa
+ELKSAR,0.1,7.9,2.4,16.9,Gafsa
+METLAOUI,0.2,6.8,3.2,16.2,Gafsa
+SIDI AICHE,0.7,10.6,2.1,16.1,Gafsa
+GAFSA SUD,0.3,10,1.8,15.4,Gafsa
