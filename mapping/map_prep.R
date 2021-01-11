@@ -52,7 +52,7 @@ my_map <- county_matched_processed %>%
   ggplot() +
   geom_sf(aes(fill = poverty), color = NA, size = 0.1) +
   labs(title = "Poverty rates in each county(delegation)",
-       subtitle = "A clear concentraion of well been in the capital, and the costs.",
+       subtitle = "A clear concentraion of welfare in the capital, and the costs.",
        caption = "grey areas are waterbodies") +
   scale_fill_viridis_c() +
   guides(fill = guide_legend(title = "poverty rates",
@@ -71,16 +71,18 @@ my_plot <- unnested_data %>%
             avg_dropout = mean(dropout_rate_secondary)) %>%
   mutate(states = fct_reorder(states,avg_poverty)) %>%
   ggplot() +
-  geom_col(aes(x = states, 
-               y = avg_poverty)) +
-  geom_point(aes(x = states, y = avg_dropout), 
-             color = "#d4dddd", stat = "identity")+
-  coord_flip() +
+  geom_col(aes(y = states, 
+               x = avg_poverty)) +
+  geom_point(aes(y = states, 
+                 x = avg_dropout), 
+             color = "#d4dddd")+
+  scale_x_continuous(position = "top") +
   labs(title = "Poverty and dropout rates for each state",
        subtitle = "Withour the porper statistical tools we can't really- \nconclude if there is a relation between both variables",
-       y = "Average poverty(bars)\nAverage dropouts(points)",
+       x = "Average poverty(bars)\nAverage dropouts(points)",
        caption = "github : @bennour007 | twitter : @bennour007sin") +
-  theme_plot
+  theme_plot 
 
 
-my_map + my_plot
+my_map 
+my_plot
